@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+footer {   
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;   
+    bottom: 0;
+}
+
+main {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-top: 15%;
+    background-color: #333;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#button_regist{
+    background-color: #696969; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 18%;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+
+#button_login{
+    background-color: #696969; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 18%;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+    
+}
+button:active {
+    background-color: #000000;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+label {
+    font-size: 15px;
+    color: #fff;
+}
+
+input {
+    margin-left: auto;
+    font-size: 15px;
+}
+
+.notnone{
+    font-size: 15px;
+    color: #fff; 
+}
+
+#button_register{
+    background-color: #696969; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+
+#coloredText {
+    font-size: 50px;
+    text-indent: 5px;
+    text-align: center; 
+    border: 4px solid #ccc;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+
+}
+
+#text_to_type {
+    margin-top: 15%;
+    font-size: 50px;
+    text-indent: 5px;
+    text-align: center;
+
+}
+
+#upload_button{
+    background-color: #696969; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+
+#load_button{
+    background-color: #696969; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;    
+}
+
+
+#flie{
+    background-color: #696969; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px #999; 
+}
+
+#files{
+    font-size: 20px;
+    text-indent: 5px;
+    text-align: center; 
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}

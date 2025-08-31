@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Login</title>
+
+    <style>
+        .none {
+            opacity: 0.0;
+          }
+        .notnone {
+            opacity: 1.0;
+          }
+        </style>
+
+</head>
+<body>
+    <header>
+        <h1>Monkeytype</h1>
+    </header>
+    Выбрать язык
+    <br>
+    En <input type="radio" name="locale" value="en" onclick="changeLanguage('en')">
+    <br>
+    Ru <input type="radio" name="locale" value="ru" onclick="changeLanguage('ru')">
+    
+<main>
+
+    <form action="{{ url_for('login') }}" method="post">
+        <br>
+    <table>
+        <tr>
+            <td>
+                <label for="username" id="username_text">Username</label>
+            </td>
+            <td>
+                <input type="text" id="username" name="username" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password" id="password_text">Password</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" required>
+            </td>
+        </tr>
+    </table>
+        <br>
+        <button id="button_login" type="submit">Login</button>
+        <div id="div" class="none">
+            <br>
+            <p>Неверное имя пользователя или пароль</p>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2023 Monkeytype. All rights reserved.</p>
+</footer>
+
+</body>
+
+<script src="{{ url_for('static', filename='login_l.js') }}"> </script>
+<script>
+    console.log('aoboafdb');
+    var c = "{{ c }}";
+    console.log('c=', c);
+    var div = document.getElementById('div');
+    console.log(div);
+    if(c == 0){
+        div.className = "none";
+    }
+    else{ 
+        div.className = "notnone";
+    }
+</script>
+
+</html>

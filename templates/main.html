@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Main</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Monkeytype</h1>
+    </header>
+    Выбрать язык
+    <br>
+    En <input type="radio" name="locale" value="en" onclick="changeLanguage('en')">
+    <br>
+    Ru <input type="radio" name="locale" value="ru" onclick="changeLanguage('ru')">
+    <main>
+    <form action ="{{ url_for('register') }}" method="GET">
+        <br>
+        <button id ="button_regist" type="submit">Register</button>
+    </form>
+
+    <form action="{{ url_for('login') }}" method="GET">
+        <br>
+        <button id ="button_login" type="submit">Login</button>
+    </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Monkeytype. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="{{ url_for('static', filename='main_l.js') }}"></script>
+</html>
